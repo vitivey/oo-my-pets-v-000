@@ -41,8 +41,8 @@ class Owner
       "I am a human."
     end
 
-    def reset_all
-
+    def walk_dogs
+      
     end
 
 end
