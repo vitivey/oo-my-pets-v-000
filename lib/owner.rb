@@ -3,13 +3,11 @@ class Owner
   attr_accessor :name
   attr_reader :species
   @@all=[]
-  @@count=0
 
     def initialize(species)
       @species=species
       @pets={fishes:[], cats:[], dogs:[]}
       @@all << self
-      count
     end
 
     def buy_fish(name)
@@ -17,9 +15,12 @@ class Owner
       @pets[fishes]<<fish
     end
 
-    def count
-      @@count+=1
+    def self.count
+      @@all.size
     end
+
+    def self.reset_all
+      @@ll.
     def self.all
       @@all
     end
