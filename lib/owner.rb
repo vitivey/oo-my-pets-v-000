@@ -9,6 +9,7 @@ class Owner
       @species=species
       @pets={fishes:[], cats:[], dogs:[]}
       @@all << self
+      count
     end
 
     def buy_fish(name)
