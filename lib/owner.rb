@@ -1,5 +1,6 @@
 class Owner
   # code goes here
+  attr_accessor :name
   attr_reader :species
   @@all=[]
 
@@ -9,7 +10,12 @@ class Owner
       @@all << self
     end
 
+    def buy_fish(name)
+      fish=Fish.new(name)
+      @pets[fishes]<<fish
+    end
 
+    
     def self.all
       @@all
     end
