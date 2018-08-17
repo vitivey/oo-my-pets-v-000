@@ -14,7 +14,9 @@ class Owner
       @@all
     end
 
-    
+    def say_species
+      "I am a human."
+    end
 
     def reset_all
 
